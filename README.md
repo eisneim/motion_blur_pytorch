@@ -17,7 +17,7 @@ Create smooth FPV drone footage, game recordings, or low-FPS videos using frame 
 ## results
 | Before(24fps)             | After(24fps)      |
 | ----------- | ----------- |
-| https://github.com/user-attachments/assets/25977bba-957d-4791-a7c4-e8790152d9cb  | https://github.com/user-attachments/assets/7da1983e-c836-454c-a402-ca0fcabad2a5  |
+| https://github.com/user-attachments/assets/25977bba-957d-4791-a7c4-e8790152d9cb | https://github.com/user-attachments/assets/7da1983e-c836-454c-a402-ca0fcabad2a5|
 
 ## insallation
  - A fast GPU is required on **linux** and **windows**, for **Mac** you need to use M1~ M4 series chip with at least 32G RAM
