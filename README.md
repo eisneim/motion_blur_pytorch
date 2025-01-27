@@ -24,7 +24,25 @@ Create smooth FPV drone footage, game recordings, or low-FPS videos using frame 
  - first, install pytorch follow the offical guide: [guide](https://pytorch.org/get-started/locally/)
  - install dependencies: **pip install -r requirements.txt**
 
-### FILM
+### AMT
+download pretraind AMT-L model [google drive](https://drive.google.com/file/d/1BvSeK7NAexA9xX1z6b3PtMyNYCWfa_Li/view?usp=drive_link) or [百度网盘](https://pan.baidu.com/s/1VJPhHtsOEWuok2okvxB48g?pwd=iihx) password: iihx 
+
+edit file `blur_amt.py`
+```python
+# change the path to your downloaded file
+amt_model_path = "/Users/teli/www/ml/frame_interpolation/AMT/_pretrained/amt-l.pth"
+
+```
+process a folder with videos inside
+```
+python blur_amt.py -o output_folder_path input_folder_that_has_mp4_files/ 
+```
+process multi video files
+```
+python blur_amt.py -o output_folder_path path/to/a.mp4 path/to/b.mp4 path/to/c.mp4
+```
+
+### FILM (a bit slow)
 download pretraind FILM model [google drive](https://drive.google.com/file/d/16usfzvVsa0VM2Iy32u1C-C3Rsx8Uz0Lq/view?usp=drive_link) or [百度网盘](https://pan.baidu.com/s/1GPs9ph8JbNQT87eGwUp7rQ?pwd=8pxu) password: 8pxu 
 
 edit file `blur_film.py`
@@ -43,6 +61,13 @@ process multi video files
 python blur_film.py -o output_folder_path path/to/a.mp4 path/to/b.mp4 path/to/c.mp4
 ```
 
+
+
 ## TODO
  - add more models
- 
+
+## Limitations
+ - whithout quantization and other tricks, current implementation is slow
+ - requires a lot ram to run
+
+
